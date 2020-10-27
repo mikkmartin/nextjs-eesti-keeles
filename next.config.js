@@ -3,7 +3,7 @@ module.exports = {
     //GET routes from cms
     return [
       {
-        source: '/blogi/:slug',
+        source: '/blogiiii/:slug',
         destination: '/blog/:slug',
       },
     ]

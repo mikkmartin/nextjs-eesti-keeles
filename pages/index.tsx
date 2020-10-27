@@ -33,7 +33,7 @@ export const getServerSideProps = (ctx: GetServerSidePropsContext) => {
   const lang = ctx.locale ? ctx.locale : 'et'
   const languages = {
     en: { title: 'Hello', url: 'blog/test' },
-    et: { title: 'Tere', url: 'blog/testin-seda-värki' },
+    et: { title: 'Tere', url: 'blogiiii/testin-seda-värki' },
   }
   return {
     //@ts-ignore
