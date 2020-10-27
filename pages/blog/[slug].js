@@ -3,14 +3,13 @@ const Post = props => {
 }
 
 export const getServerSideProps = ctx => {
-  const lang = ctx.locale ? ctx.locale : 'et'
   const languages = {
     en: 'A blog in english',
     et: 'Eesti keeles blogi',
   }
   return {
     props: {
-      title: languages[lang],
+      title: languages[ctx.locale],
     },
   }
 }

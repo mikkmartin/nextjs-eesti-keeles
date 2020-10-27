@@ -29,16 +29,14 @@ const Home: FC<Props> = ({ title, url }) => {
   )
 }
 
-//Derp
 export const getServerSideProps = (ctx: GetServerSidePropsContext) => {
-  const lang = ctx.locale ? ctx.locale : 'et'
   const languages = {
     en: { title: 'Hello', url: 'blog/test' },
     et: { title: 'Tere', url: 'blogiiii/testin-seda-värki' },
   }
   return {
     //@ts-ignore
-    props: languages[lang],
+    props: languages[ctx.locale],
   }
 }
 
