@@ -29,6 +29,7 @@ const Home: FC<Props> = ({ title, url }) => {
   )
 }
 
+//Derp
 export const getServerSideProps = (ctx: GetServerSidePropsContext) => {
   const lang = ctx.locale ? ctx.locale : 'et'
   const languages = {
